@@ -21,7 +21,7 @@ const Stopwatch = () => {
   };
 
   useEffect(() => {
-    let intervalID: NodeJS.Timer;
+    let intervalID: number;
     if (isRunning)
       intervalID = setInterval(() => {
         setTime((prev) => prev + 1);
